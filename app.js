@@ -28,6 +28,7 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public'), options));
 app.use(express.static(path.join(__dirname, 'app')));
+//app.use(express.static(path.join(__dirname, 'bower_components')));
 
 // Routes registration
 // ---
