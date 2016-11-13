@@ -2,10 +2,11 @@ img.center{
 	display: block;
     margin: 0 auto;
 }
-h3.center{
+button.center{
 	display: block;
     margin: 0 auto;
 }
+
 .content{
 	position: relative;
 	margin: 0 auto;

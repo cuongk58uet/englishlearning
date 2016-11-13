@@ -1,0 +1,55 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/css/dist/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/css/style.css')
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		
+	body
+		nav(role="navigation").navbar.navbar-inverse.nav-fixed-top
+			.navbar-header
+				button(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse").navbar-toggle.collapsed
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a(href="#" ).navbar-brand English Learning
+			.collapse.navbar-collapse.navbar-ex1-collapse
+				ul.nav.navbar-nav.navbar-right
+					li: a(href="#") Link
+					li.dropdown
+						a.dropdown-toggle(href="#", data-toggle="dropdown",role="button", aria-expanded="false")
+							| 
+							span.caret
+						ul.dropdown-menu(role="menu")
+							li: a(href="#") Logged with <b>admin</b>
+							li: a(href="#") My profile
+							li: a(href="#") Log out
+		.container-fluid
+			block content
+				.footer
+					.col-md-4
+						.panel.panel-default
+							.panel-body(style="background-color: #222")
+								h3.text-center About Us
+								p.text-center This website was developed by VAT team
+								p.text-center Download source code at <a href="https://github.com/cuongk58uet/englishlearning">here</a>
+					.col-md-4
+						.panel.panel-default
+							.panel-body(style="background-color: #222")
+								h3.text-center Helps
+								p.text-center Please contact us if you encounter any problems
+								p.text-center Mail to: <a href="mailto:">suppport@englishlearning.com</a>
+					.col-md-4
+						.panel.panel-default
+							.panel-body(style="background-color: #222")
+								h3.text-center FAQs
+								p.text-center <a href="">How to choose a skill?</a>
+								p.text-center <a href="">How to review my lesson?</a>
+		
+
+
+		script(src="/js/jquery/dist/jquery.min.js")
+		script(src="/css/bootstrap/dist/js/bootstrap.min.js")
+		script(src="/js/myscript.js")

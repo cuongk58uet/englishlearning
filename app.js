@@ -4,8 +4,13 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const compression = require('compression');
+const mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://cuongnm_58:manhcuong95@ds029585.mlab.com:29585/mymongodb')
+  .then(() => console.log('Connected database'))
+  .catch((err) => console.error(err));
 
-var users = require('./routes/users');
+var vocabulary = require('./routes/vocabulary');
 var app = express();
 
 const options = {
@@ -28,11 +33,10 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public'), options));
 app.use(express.static(path.join(__dirname, 'app')));
-//app.use(express.static(path.join(__dirname, 'bower_components')));
+
 
 // Routes registration
-// ---
-app.use('/users', users);
+app.use('/', vocabulary);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
