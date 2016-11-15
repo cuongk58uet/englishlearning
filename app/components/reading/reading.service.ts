@@ -10,7 +10,7 @@ export class ReadingService{
    }
 
   getQuestions(){
-    return this.http.get('http://localhost:3000/api/reading')
+    return this.http.get('/api/reading')
       .map(res => res.json());
   }
 }
