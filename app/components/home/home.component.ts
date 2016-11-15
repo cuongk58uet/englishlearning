@@ -7,6 +7,6 @@ import 'rxjs/add/operator/map';
     templateUrl: 'components/home/home.component.html',
 })
 export class HomeComponent {
-    name: string = "Home page";
+    title: string = "Home page";
 
 }

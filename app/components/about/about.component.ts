@@ -6,11 +6,10 @@ import { ActivatedRoute } from '@angular/router';
     templateUrl: 'components/about/about.component.html',
 })
 export class AboutComponent {
-    name: string = "About Us";
+    title: string = "About Us";
     param: string;
 
     constructor(private params: ActivatedRoute) {
-        params.params
-            .subscribe((data: { id?: string}) => this.param = data.id);
+        
     }
 }
