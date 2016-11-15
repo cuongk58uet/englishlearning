@@ -8,9 +8,8 @@ import { ReadingService } from './reading.service';
   providers: [ReadingService]
 })
 export class ReadingComponent implements OnInit{ 
-	title = 'Choose correct answer';
 	questions: Object[];
-	correct: number;
+	countCorrectAnswer: number;
 	constructor(private readingService:ReadingService) {
 		this.readingService.getQuestions()
 			.subscribe(questions => {
@@ -28,14 +27,14 @@ export class ReadingComponent implements OnInit{
   }
 
   check() {
-    this.correct = 0;
+    this.countCorrectAnswer = 0;
 
     for (let i = 0; i < this.questions.length; i ++){
       if(this.questions[i]['option'] == this.questions[i]['correct_answer']){
-        this.correct++;
-        this.questions[i]['status'] = "True";
+        this.countCorrectAnswer++;
+        this.questions[i]['status'] = "Right";
       }else{
-        this.questions[i]['status'] = "False";
+        this.questions[i]['status'] = "Wrong! The correct answer is " + this.questions[i]['correct_answer'];
       }
     }
   }
