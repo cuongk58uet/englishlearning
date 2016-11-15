@@ -1,10 +1,32 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
-
+html,
 body {
-  padding: 50px;
-  font-family: 'Source Code Pro', serif;
+  padding:0;
+  height:100%;
 }
-
-a {
-  color: #00B7FF;
+.wrapper {
+  min-height:100%;
+  position:relative;
+}
+.header {
+  background:#ededed;
+}
+.content {
+  padding-bottom:0px;
+  min-height: 500px
+}
+.my-footer {
+  background-color:black;
+  width:100%;
+  height:auto;
+  position:absolute;
+  padding-top: 10px;
+}
+.my-footer a{
+  color: #333333;
+}
+.my-footer a:hover{
+  color: #fff;
+}
+.my-footer a:focus{
+  color: #fff;
 }

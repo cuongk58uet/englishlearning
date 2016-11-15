@@ -1,0 +1,18 @@
+<div class="container">
+	<h1>Choose the best answer</h1>
+	<hr>
+	<div *ngFor=" let question of questions">
+		<h4>{{question.question}}</h4>
+		<div *ngIf="question.status" >
+			<span *ngIf="question.status=='True'" style="color:green;">{{question.status}}</span>
+			<span *ngIf="question.status=='False'" style="color:red;">{{question.status}}</span>
+		</div> 
+		<div *ngFor=" let option of question.answer"> 
+			<input type="radio" (click)="saveStatus(question,option.value)" name="{{question.id}}">
+			<label>{{option.text}} </label>
+	  	</div>
+	</div>
+	<button class="btn btn-md btn-success" (click)="check()">Check answer </button> {{ correct}}
+	<br><br>
+
+</div>

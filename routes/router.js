@@ -2,11 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.json({
-    name: "John",
-    last: "Smith"
-  });
+router.get('/api/reading', function(req, res, next) {
+  res.send('OK');
 });
 
 module.exports = router;
