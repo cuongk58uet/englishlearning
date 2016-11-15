@@ -3,10 +3,9 @@ import { Component, OnInit } from '@angular/core';
 import { ReadingService } from './reading.service';
 
 @Component({
-	moduleId: module.id,
 	selector: 'reading',
-    templateUrl: 'reading.component.html',
-    providers: [ReadingService]
+  templateUrl: 'components/reading/reading.component.html',
+  providers: [ReadingService]
 })
 export class ReadingComponent implements OnInit{ 
 	title = 'Choose correct answer';

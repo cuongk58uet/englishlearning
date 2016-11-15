@@ -2,9 +2,8 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-	moduleId: module.id,
     selector: 'my-about',
-    templateUrl: 'about.component.html',
+    templateUrl: 'components/about/about.component.html',
 })
 export class AboutComponent {
     name: string = "About Us";
