@@ -21,8 +21,10 @@
 #### Cài đặt Nodejs:
 
 Download bản cài đặt Nodejs tương ứng với phiên bản hệ điều hành [tại đây](https://nodejs.org/en/download/) (nên sử dụng phiên bản mới nhất để có đầy đủ các tính năng)
-Sau khi cài đặt xong, kiểm tra cài đặt thành công bằng cách mở cửa sổ dòng lệnh và gõ: 
-`node -v` `npm -v`
+Sau khi cài đặt xong, kiểm tra cài đặt thành công bằng cách mở cửa sổ dòng lệnh và gõ:
+
+`node -v` 
+`npm -v`
 
 ![Ảnh mô tả tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/install-node.PNG)
 
@@ -36,22 +38,26 @@ Mở cửa sổ lệnh và gõ:
 - Clone source code từ [đây](https://github.com/cuongk58uet/englishlearning)
 - Di chuyển vào thư mục project vừa clone về và mở GitBash tại thư mục đó (yêu cầu máy tính đã cài đặt Git).
 - Gõ `git rm -rf .git`
-- Mở cửa sổ lệnh tại thư mục chứa project:
-Gõ lệnh: `npm install` để tiến hành cài đặt các modules cần thiết cho project (Các modules này được định nghĩa trong phần dependencies và devDependencies trong file package.json)
+- Mở cửa sổ lệnh tại thư mục chứa project: <br>
+Gõ lệnh: `npm install` để tiến hành cài đặt các modules cần thiết cho project (Các modules này được định nghĩa trong phần dependencies và devDependencies trong file [package.json](https://github.com/cuongk58uet/englishlearning/blob/master/package.json)) <br>
+
 ![Ảnh mô tả tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/npm-install.PNG)
 
-- Sau khi cài đặt hoàn tất. Gõ lệnh `npm start` để chạy ứng dụng. Mở trình duyệt và truy cập địa chỉ: localhost:3000
+- Sau khi cài đặt hoàn tất. Gõ lệnh `npm start` để chạy ứng dụng. Mở trình duyệt và truy cập địa chỉ: <b>localhost:3000<b>
 ![Ảnh minh họa tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/npm-start.PNG)
 
 ### Sử dụng ứng dụng:
 Bằng cách sử dụng các điều hướng có trên thanh Navigation, người dùng có thể chọn các bài học với các kĩ năng tương ứng.
+
 ![Ảnh minh họa tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/reading.PNG)
+
 ![Ảnh minh họa tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/home-page.PNG)
+
 ![Ảnh minh họa tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/listening.PNG)
 
 ### Triển khai (Deploy) lên heroku 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-- Biên dịch lại trước khi deploy bằng cách gõ lệnh: `npm run build:prod`
+- Biên dịch lại trước khi deploy bằng cách gõ lệnh: `npm run build:prod` <br>
 Câu lệnh sẽ biên dịch các cài đặt cần thiết để có thể triển khai lên host mà không gặp lỗi
 - Yêu cầu đã có tài khoản trên heroku
 - Hướng dẫn deploy lên heroku tại [đây](https://devcenter.heroku.com/articles/deploying-nodejs)
