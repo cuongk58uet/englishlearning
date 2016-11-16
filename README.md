@@ -43,7 +43,7 @@ Gõ lệnh: `npm install` để tiến hành cài đặt các modules cần thi�
 
 ![Ảnh mô tả tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/npm-install.PNG)
 
-- Sau khi cài đặt hoàn tất. Gõ lệnh `npm start` để chạy ứng dụng. Mở trình duyệt và truy cập địa chỉ: <b>localhost:3000<b>
+- Sau khi cài đặt hoàn tất. Gõ lệnh `npm start` để chạy ứng dụng. Mở trình duyệt và truy cập địa chỉ: <b>localhost:3000</b>
 ![Ảnh minh họa tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/npm-start.PNG)
 
 ### Sử dụng ứng dụng:
