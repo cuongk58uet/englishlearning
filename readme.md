@@ -24,13 +24,13 @@ Download bản cài đặt Nodejs tương ứng với phiên bản hệ điều 
 Sau khi cài đặt xong, kiểm tra cài đặt thành công bằng cách mở cửa sổ dòng lệnh và gõ: 
 `node -v` `npm -v`
 
-[Ảnh mô tả tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/install-node.PNG)
+![Ảnh mô tả tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/install-node.PNG)
 
 #### Cài đặt Express:
 
 Mở cửa sổ lệnh và gõ:
 `npm install -g express-generator`
-[Ảnh mô tả tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/install-express.PNG)
+![Ảnh mô tả tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/install-express.PNG)
 
 #### Cài đặt ứng dụng:
 - Clone source code từ [đây](https://github.com/cuongk58uet/englishlearning)
@@ -38,16 +38,16 @@ Mở cửa sổ lệnh và gõ:
 - Gõ `git rm -rf .git`
 - Mở cửa sổ lệnh tại thư mục chứa project:
 Gõ lệnh: `npm install` để tiến hành cài đặt các modules cần thiết cho project (Các modules này được định nghĩa trong phần dependencies và devDependencies trong file package.json)
-[Ảnh mô tả tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/npm-install.PNG)
+![Ảnh mô tả tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/npm-install.PNG)
 
 - Sau khi cài đặt hoàn tất. Gõ lệnh `npm start` để chạy ứng dụng. Mở trình duyệt và truy cập địa chỉ: localhost:3000
-[Ảnh minh họa tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/npm-start.PNG)
+![Ảnh minh họa tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/npm-start.PNG)
 
 ### Sử dụng ứng dụng:
 Bằng cách sử dụng các điều hướng có trên thanh Navigation, người dùng có thể chọn các bài học với các kĩ năng tương ứng.
-[Ảnh minh họa tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/reading.PNG)
-[Ảnh minh họa tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/home-page.PNG)
-[Ảnh minh họa tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/listening.PNG)
+![Ảnh minh họa tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/reading.PNG)
+![Ảnh minh họa tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/home-page.PNG)
+![Ảnh minh họa tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/listening.PNG)
 
 ### Triển khai (Deploy) lên heroku 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
