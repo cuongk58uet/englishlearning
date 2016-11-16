@@ -44,7 +44,7 @@ export class ReadingComponent implements OnInit{
     check() {
       this.countCorrectAnswer = 0;
 
-      for (let i = 0; i < this.questions.length; i ++){
+      for (let i = this.lower_limit - 1; i < this.upper_limit; i ++){
         if(this.questions[i]['option'] == this.questions[i]['correct_answer']){
           this.countCorrectAnswer++;
           this.questions[i]['status'] = "Right";

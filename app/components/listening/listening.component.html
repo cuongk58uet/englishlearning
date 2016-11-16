@@ -9,7 +9,7 @@
 	</div>
 	
 	<hr>
-	<h3>Conversation 1</h3>
+	<h3 style="color: green"><span class="glyphicon glyphicon-tags"></span>  Conversation 1</h3>
 	<div *ngFor=" let question of questions">
 		<div *ngIf="question.id <= 5">
 			<b><h4><span *ngIf="question.status=='Right'" class="glyphicon glyphicon-ok" style="color: green"></span>
@@ -26,7 +26,7 @@
 		  	</div>
 		</div>
 	</div>
-	<h3>Conversation 2</h3>
+	<h3 style="color: green"><span class="glyphicon glyphicon-tags"></span>  Conversation 2</h3>
 	<div *ngFor=" let question of questions">
 		<div *ngIf="question.id > 5">
 			<b><h4><span *ngIf="question.status=='Right'" class="glyphicon glyphicon-ok" style="color: green"></span>
