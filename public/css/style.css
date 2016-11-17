@@ -1,6 +1,6 @@
 html,
 body {
-  padding:0;
+  padding:0px;
   height:100%;
 }
 .wrapper {
@@ -8,18 +8,21 @@ body {
   position:relative;
 }
 .header {
-  background:#ededed;
+  background: black;
+  height: 52px;
 }
 .content {
   padding-bottom:0px;
-  min-height: 500px
+  min-height: 600px;
+  /* background-color: #ebebe0; */
 }
 .my-footer {
   background-color:black;
   width:100%;
-  height:auto;
+  /* height:auto; */
   position:absolute;
   padding-top: 10px;
+  padding-bottom: 50px;
 }
 .my-footer a{
   color: #333333;
@@ -29,4 +32,19 @@ body {
 }
 .my-footer a:focus{
   color: #fff;
+}
+
+.content  .sidebar{
+  float: left;
+  height: 200px;
+  width: 20%;
+  border: 2px solid black;
+  overflow: hidden;
+}
+.content  .subcontent{
+  height: 200px;
+  width: 80%;
+  border: 2px solid black;
+  float: right;
+  overflow: hidden;
 }

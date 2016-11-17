@@ -16,7 +16,7 @@ export class ReadingComponent implements OnInit{
 
 	countCorrectAnswer: number;
 	constructor(private readingService:ReadingService,
-      private router: Router
+    private router: Router
     ) {
 		this.readingService.getQuestions()
 			.subscribe(questions => {
@@ -28,6 +28,7 @@ export class ReadingComponent implements OnInit{
   		this.param = 1;
       this.upper_limit = this.param * 10;
       this.lower_limit = this.upper_limit - 9;
+      this.countCorrectAnswer = 0;
   	}
 
     gotoLesson(param: number): void{
@@ -35,6 +36,7 @@ export class ReadingComponent implements OnInit{
       this.param = param;
       this.upper_limit = this.param * 10;
       this.lower_limit = this.upper_limit - 9;
+      this.countCorrectAnswer = 0;
     }
 
     saveStatus(question: Object, value:String) {
