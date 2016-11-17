@@ -50,10 +50,11 @@ Sau khi cài đặt xong, kiểm tra cài đặt thành công bằng cách mở 
 #### Cài đặt Express:
 
 Mở cửa sổ lệnh và gõ:
-`npm install -g express-generator`
+`npm install -g express-generator`. Câu lệnh này cho phép tạo nhanh một project Express với cấu trúc chuẩn. Tạo một project mới bằng câu lệnh `express [tên-project]`
 ![Ảnh mô tả tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/install-express.PNG)
 
 #### Cài đặt ứng dụng:
+- Ứng dụng được viết trên nền tảng Express-generator và Angular2
 - Clone source code từ [đây](https://github.com/cuongk58uet/englishlearning)
 - Di chuyển vào thư mục project vừa clone về và mở GitBash tại thư mục đó (yêu cầu máy tính đã cài đặt Git).
 - Gõ `git rm -rf .git`
