@@ -17,19 +17,19 @@
 
 ## Giới thiệu công nghệ sử dụng:
 ### Nodejs:
-![Ảnh mô tả tại đây](https://github.com/cuongk58uet/englishlearning/tree/master/images/nodejs.jpeg)
+![Ảnh mô tả tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/nodejs.jpeg)
 
 - NodeJS là một mã nguồn được xây dựng dựa trên nền tảng Javascript V8 Engine, libUV platform abstraction layer, và một thư viện lõi được viết bằng Javascript. Nó được sử dụng để xây dựng các ứng dụng web như các trang video clip, các forum và đặc biệt là trang mạng xã hội phạm vi hẹp. NodeJS là một mã nguồn mở được sử dụng rộng bởi hàng ngàn lập trình viên trên toàn thế giới. NodeJS có thể chạy trên nhiều nền tảng hệ điều hành khác nhau từ Windows cho tới Linux, OS X nên đó cũng là một lợi thế. NodeJS cung cấp các thư viện phong phú ở dạng Javascript Module khác nhau giúp đơn giản hóa việc lập trình và giảm thời gian ở mức thấp nhất.
 - Tìm hiểu thêm về Nodejs tại [đây](https://nodejs.org/en/).
 
 ### ExpressJS:
-![Ảnh mô tả tại đây](https://github.com/cuongk58uet/englishlearning/tree/master/images/expressjs.png)
+![Ảnh mô tả tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/expressjs.png)
 
 - Express là một framework nhỏ và tiện ích để xây dựng các ứng dụng web, cung cấp một lượng lớn của tính năng mạnh mẽ để phát triển các ứng dụng web và mobile. Nó rất dễ dàng để phát triển các ứng dụng nhanh dựa trên Node.js cho các ứng dụng Web.
 - Tham khảo thêm thông tin tại [đây](http://expressjs.com/)
 
 ### Angular 2:
-![Ảnh mô tả tại đây](https://github.com/cuongk58uet/englishlearning/tree/master/images/angular2.jpg)
+![Ảnh mô tả tại đây](https://github.com/cuongk58uet/englishlearning/blob/master/images/angular2.jpg)
 
 - AngularJS là một framework có cấu trúc cho các ứng dụng web động. Nó cho phép bạn sử dụng HTML như là ngôn ngữ mẫu và cho phép bạn mở rộng cú pháp của HTML để diễn đạt các thành phần ứng dụng của bạn một cách rõ ràng và súc tích. Hai tính năng cốt lõi: Data binding và Dependency injection của AngularJS loại bỏ phần lớn code mà bạn thường phải viết. Nó hoạt động trên tất cả các trình duyệt, làm cho nó trở thành lựa chọn lý tưởng của bất kỳ công nghệ Server nào.
 - Angular 2 là một sự đột phá từ phiên bản AngularJS 1.x. Cung cấp các tính năng mạnh mẽ hơn nữa. Tham khảo thêm thông tin về Angular 2 tại [đây](https://angular.io/docs/ts/latest/quickstart.html)
