@@ -61,7 +61,6 @@ export class ReadingComponent implements OnInit{
       this.countCorrectAnswer = 0;
       for( let i = 0; i < this.advanced_questions.length; i++){
         let question = this.advanced_questions[i]['questions'];
-        //console.log(question);
         for(let j = 0; j < 9; j++){
           if(question[j]['option'] == question[j]['correct_answer']){
             this.countCorrectAnswer++;
