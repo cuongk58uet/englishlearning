@@ -10,6 +10,7 @@ import { ReadingService } from './reading.service';
 })
 export class ReadingComponent implements OnInit{ 
 	questions: Object[];
+  advanced_questions: Object[];
   param: number;
   lower_limit: number;
   upper_limit: number;
@@ -18,10 +19,14 @@ export class ReadingComponent implements OnInit{
 	constructor(private readingService:ReadingService,
     private router: Router
     ) {
-		this.readingService.getQuestions()
-			.subscribe(questions => {
-				this.questions = questions;
-			});
+  		this.readingService.getQuestions()
+  			.subscribe(questions => {
+  				this.questions = questions;
+  			});
+        this.readingService.getParagraph()
+        .subscribe(advanced => {
+          this.advanced_questions = advanced;
+        });
   	}
 
   	ngOnInit() {
@@ -39,8 +44,33 @@ export class ReadingComponent implements OnInit{
       this.countCorrectAnswer = 0;
     }
 
+    advanced_gotoLesson(param: number): void{
+      this.router.navigate(['/reading', param]);
+      this.param = param;
+      this.countCorrectAnswer = 0;
+    }
+
     saveStatus(question: Object, value:String) {
       question['option'] = value;
+    }
+
+    saveValue(question: Object, value: String){
+      question['option'] = value;
+    }
+    adv_check(){
+      this.countCorrectAnswer = 0;
+      for( let i = 0; i < this.advanced_questions.length; i++){
+        let question = this.advanced_questions[i]['questions'];
+        //console.log(question);
+        for(let j = 0; j < 9; j++){
+          if(question[j]['option'] == question[j]['correct_answer']){
+            this.countCorrectAnswer++;
+            question[j]['status'] = "Right";
+          } else{
+            question[j]['status'] = "Wrong! The correct answer is " + question[j]['correct_answer'];
+          }
+        }
+      }
     }
 
     check() {

@@ -1,50 +1,35 @@
-html,
-body {
-  padding:0px;
-  height:100%;
-}
 .wrapper {
   min-height:100%;
   position:relative;
 }
 .header {
-  background: black;
-  height: 52px;
-}
-.content {
-  padding-bottom:0px;
-  min-height: 600px;
-  /* background-color: #ebebe0; */
-}
-.my-footer {
-  background-color:black;
-  width:100%;
-  /* height:auto; */
-  position:absolute;
-  padding-top: 10px;
-  padding-bottom: 50px;
-}
-.my-footer a{
-  color: #333333;
-}
-.my-footer a:hover{
-  color: #fff;
-}
-.my-footer a:focus{
-  color: #fff;
+  border-color: #595959;
 }
 
-.content  .sidebar{
-  float: left;
-  height: 200px;
-  width: 20%;
-  border: 2px solid black;
-  overflow: hidden;
+.content{
+  min-height: 500px;
+  position: relative;
 }
-.content  .subcontent{
-  height: 200px;
-  width: 80%;
-  border: 2px solid black;
-  float: right;
-  overflow: hidden;
+.narbar{
+  border-radius: 0px;
+}
+.footer{
+  background-color: black;
+  height: auto;
+  width: 100%;
+  position:absolute;
+  padding-top: 10px;
+}
+.footer p{
+  color: #333333;
+  font-size: 14px;
+}
+.footer a{
+  color: #333333;
+}
+.footer a:hover{
+  color: white;
+}
+.footer h2{
+  color: #333333;
 }
