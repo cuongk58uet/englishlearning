@@ -12,7 +12,7 @@ export class ReadingComponent implements OnInit{
   questions: Object[];
   advanced_questions: Object[];
   param: number;
-  param_advanced: numver;
+  param_advanced: number;
   lower_limit: number;
   upper_limit: number;
 
